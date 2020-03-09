@@ -4,8 +4,6 @@ module subs
 
 !----------------------------------------------------------------  
 !laplacian------------------
-!!!!!!!!!CHANGE IN v0.9.6: BOUNDARY CONDITIONS TOP AND BOTTOM
-!!!!! AND ADDED BCTYPE
 !-----------------
 	function laplace(a,d,lptype,topvalue,bottomvalue)
 	implicit none
@@ -398,7 +396,6 @@ subroutine interpolate(Fin,Fout,direction,top,bottom)
 !----------------------------------------------------------------
 !advection-of vx--v*grad(F)
 !3rd order accurate upwind scheme----------------------
-!!!!!CHANGE IN v0.9.6 TOP AND BOTTOM BOUNDARY CONDITIONS
 !---------------------------------
 	subroutine advection(d,vx,vy,nxa,nya,F,vgrad,atype,topvalue,bottomvalue)
 	implicit none
